@@ -12,10 +12,16 @@ const io = require("socket.io")(server, {
 });
 
 server.listen("8080", () => console.log("Server run"));
+let count = [];
+let settings = {};
 
 io.on("connection", (socket) => {
+  count.push(socket?.id);
   socket.on("sendSku", (sku) => {
+    settings = sku;
     console.log("sku :>> ", sku);
     socket.broadcast.emit("receivedSku", sku);
   });
+
+  socket.broadcast.emit("init", settings);
 });

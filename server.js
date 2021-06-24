@@ -8,7 +8,7 @@ const io = require("socket.io")(server, {
   },
 });
 
-server.listen("443", () => console.log("Server run"));
+server.listen("8080", () => console.log("Server run"));
 let settings = {};
 let allmessages = [];
 

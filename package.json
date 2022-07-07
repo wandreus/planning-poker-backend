@@ -2,7 +2,7 @@
   "name": "poc-live-commerce",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "wandreuspereira <wandreus.pereira@original.io>",
+  "author": "wandreus <wandreus.pereira@outlook.com>",
   "license": "MIT",
   "scripts": {
     "start": "node index.js"
@@ -11,5 +11,8 @@
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "socket.io": "^4.0.1"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }
